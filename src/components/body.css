@@ -1,0 +1,13 @@
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+body {
+  padding-top: 70px; /* adjust depending on navbar height */
+}
+
+
+.product-image {
+  width: 100%;
+  height: 100%;   /* or whatever height you want */
+  object-fit: contain;
+  background-color: #ffffff; /* optional: gives a neutral background */
+}

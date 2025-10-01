@@ -1,0 +1,13 @@
+body {
+  background: #fff;
+  color: #000;
+}
+
+.btn-light {
+  background: #fff;
+  border: 1px solid #eee;
+}
+
+.card {
+  border-radius: 12px;
+}

@@ -1,0 +1,5 @@
+.icon-light {
+  color: #3c3c3c !important;    /* softer gray */
+  font-weight: 50 !important; /* visually thinner */
+  opacity: 0.9;              /* makes it lighter */
+}
