@@ -1,8 +1,31 @@
 
-.fa-instagram {
+/* .fa-instagram {
   color: #C13584; /* Instagram */
-}
+/* } */
 
 .fa-facebook-f {
   color: #1877f2; /* Facebook */
+}
+
+.navbar-logo {
+  height: 60px;        /* adjust if needed */
+  width: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .navbar-logo {
+    height: 32px;
+  }
+}
+
+.logo-wrapper {
+  position: relative;
+}
+
+.logo-hat {
+  position: absolute;
+  top: -13px;
+  left: -18px;
+  width: 60px;
 }

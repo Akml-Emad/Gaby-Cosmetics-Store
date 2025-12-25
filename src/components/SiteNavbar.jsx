@@ -18,15 +18,33 @@ export default function SiteNavbar(){
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
       <div className="container">
-        <div className="d-flex">
-          <a href="https://www.instagram.com/candy_makeup_store_2011?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="nav-link">
-            <FontAwesomeIcon icon={faInstagram} size="lg" />
-          </a>
-          <a href="https://www.facebook.com/profile.php?id=61567518557452" target="_blank" rel="noopener noreferrer" className="nav-link">
-            <FontAwesomeIcon icon={faFacebookF} size="lg" />
-          </a>
-        </div>
-        <Link className="navbar-brand fw-bold" to="/">Gaby</Link>
+        
+        {/* normal logo */}
+        {/* <Link className="navbar-brand" to="/">
+          <img
+            src="../public/gaby logo.png"
+            alt="Gaby"
+            className="navbar-logo"
+          />
+        </Link> */}
+
+        {/* chritmas logo */}
+        <Link to="/" className="navbar-brand logo-container">
+  <div style={{ position: "relative", display: "inline-block", height: "50px" }}>
+    <img src="/gaby logo.png" alt="Gaby" style={{ height: "100%" }} />
+    <img
+      src="/santa hat.png"
+      alt="Hat"
+      style={{
+        position: "absolute",
+        top: "-14px",      // negative px moves it above logo
+        left: "-27%",       // adjust to position on letter
+        width: "50px",     // hat size
+      }}
+    />
+  </div>
+</Link>   
+          
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -43,6 +61,8 @@ export default function SiteNavbar(){
               </span>
             )}
           </Link>
+
+          
         </div>
       </div>
     </nav>

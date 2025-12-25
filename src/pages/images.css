@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
+
+
 .product-image {
   width: 100%;
   height: 100%;  
   object-fit: contain;
   background-color: #ffffff; /* optional: gives a neutral background */
 }
+.gaby-name{
+  /* font-family: 'Playfair Display', serif; */
+  font-weight: 780;
+  font-size: 2.5rem;  }

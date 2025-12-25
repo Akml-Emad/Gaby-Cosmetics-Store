@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { supabase } from "../supabaseClient";
+import HeroBanner from "../components/HeroBanner";
 import "./images.css";
 
 export default function Home() {
@@ -49,17 +50,17 @@ export default function Home() {
   if (loading) return <p>Loading {mode}s...</p>;
 
   return (
+    <>
+   
+
     <div className="container mt-4">
-      <h2 className="mb-4 text-center">
+      <h2 className="mb-4 text-center gaby-name">
         <span style={{ color: "#e92a46ff" }}>G</span>
         aby 
-        <span style={{ color: "#e92a46ff" }}> C</span>
-        osmetics  
-        <span style={{ color: "#e92a46ff" }}> S</span>
-        tore
+        Store
       </h2>
 
-      {/* Toggle Buttons */}
+       <HeroBanner />
       <div className="text-center mb-4">
         <button
           className={`btn me-2 ${mode === "category" ? "btn-dark" : "btn-outline-dark"}`}
@@ -99,5 +100,6 @@ export default function Home() {
         ))}
       </div>
     </div>
+    </>
   );
 }
