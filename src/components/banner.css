@@ -1,19 +1,59 @@
-.hover-circle-btn {
+.hero-banner {
   position: relative;
-  width: 50px;          /* circle size */
-  height: 50px;
-  border-radius: 50%;   /* makes it a circle */
-  background-color: rgba(0,0,0,0.6); /* semi-transparent black */
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Image */
+.hero-banner-img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Buttons */
+.hero-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.6);
   color: white;
   border: none;
+  font-size: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0;           /* invisible initially */
-  transition: opacity 0.3s ease;
   cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-.hover-circle-btn:hover {
-  opacity: 1;           /* visible on hover */
+.hero-banner:hover .hero-btn {
+  opacity: 1;
+}
+
+.hero-btn.left {
+  left: 12px;
+}
+
+.hero-btn.right {
+  right: 12px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero-banner-img {
+    height: 200px;
+  }
+
+  .hero-btn {
+    opacity: 1; /* always visible on mobile */
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
 }

@@ -11,6 +11,8 @@ export default function CartPage() {
   const [discount, setDiscount] = useState(0);
   const [discountActive, setDiscountActive] = useState(false);
 
+
+
   // Fetch discount from database
   useEffect(() => {
     async function loadDiscount() {

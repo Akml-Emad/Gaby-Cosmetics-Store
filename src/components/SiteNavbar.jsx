@@ -32,16 +32,6 @@ export default function SiteNavbar(){
         <Link to="/" className="navbar-brand logo-container">
   <div style={{ position: "relative", display: "inline-block", height: "50px" }}>
     <img src="/gaby logo.png" alt="Gaby" style={{ height: "100%" }} />
-    <img
-      src="/santa hat.png"
-      alt="Hat"
-      style={{
-        position: "absolute",
-        top: "-14px",      // negative px moves it above logo
-        left: "-27%",       // adjust to position on letter
-        width: "50px",     // hat size
-      }}
-    />
   </div>
 </Link>   
           

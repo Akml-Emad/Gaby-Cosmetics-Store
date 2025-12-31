@@ -24,9 +24,18 @@ export function CartProvider({ children }) {
     });
   }
 
-  function removeFromCart(id) {
-    setCart(prev => prev.filter(item => item.id !== id));
-  }
+  const removeFromCart = (id) => {
+    setCart(prevCart =>
+      prevCart
+      .map(item =>
+        item.id === id
+          ? { ...item, qty: item.qty - 1 }
+          : item
+      )
+      .filter(item => item.qty > 0)
+    );
+  };
+
 
   function clearCart() {
     setCart([]);
